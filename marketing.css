@@ -36,7 +36,7 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 60px 60px;
+ 
 }
 
 section h3.title {
@@ -51,12 +51,9 @@ section p {
   max-width: 775px;
 
   padding: 0 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-align: center;
 }
-
-
-/* =============HEADER STYLES======= */
 
 header {
   position: absolute;
@@ -98,12 +95,17 @@ header nav li {
   position: relative;
   justify-content: center;
   text-align: center;
-  min-height: 200 vh;
+  min-height: 100vh;
   
 }
 
+/* .midi{
+    min-height: 20vh;
+}
+*/
+
 .first .background-image {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -113,21 +115,28 @@ header nav li {
   background-color: #80a3db;
 }
 
+form {
+    padding: 5px;
+}
+
+
 .second {
+    display:flex;
   flex-wrap: wrap;
   color: black;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: center;
   justify-content: space-between;
   text-align: center;
   min-height: 180 vh;
   background-color: grey;
-}
+} 
 
 .third {
+    display: flex;
   flex-wrap: wrap;
   align-items: center;
-  flex-direction: row-reverse;
+  /* flex-direction: column; */
   text-align: center;
   justify-content: space-between;
   min-height: 180 vh;
@@ -210,7 +219,10 @@ footer p {
   align-self: center;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
+ .first{
+     min-height: 100vh;
+ }
   footer {
     flex-direction: column;
   }
@@ -220,13 +232,14 @@ footer p {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 760px) {
+
+/* @media (max-width: 760px) {
     section {
       padding: 30px 10px;
     }
-  }
+  }*/
 
-  @media (max-width: 800px) {
+ @media (max-width: 800px) {
     header {
       padding: 30px 50px;
       flex-direction: column;
@@ -235,10 +248,11 @@ footer p {
     header h2 {
       margin-bottom: 15px;
     }
-  }
+  } 
+
   @media (max-width: 760px) {
     .first {
-      min-height: 600px;
+      max-height: 80vh;
     }
   
     .first h1 {
@@ -254,6 +268,34 @@ footer p {
     }
   }
   
-  @media (max-width: 760px) {
-    flex-basis: 100%;
+
+
+  /* @media (max-width: 560){
+    .first {
+        min-height: 10vh;
+        max-height: 60vh;
+        max-width: 40vw;
+      }
+    
+      .first h1 {
+        font-size: 30px;
+      }
+    
+      .first h3 {
+        font-size: 20px;
+      }
+    
+      .first .button {
+        padding: 15px 15px;
+      }
+
+  } */
+
+  @media (max-width: 560){
+      .first {
+          max-height: 10vh;
+      }
+      .first .background-image {
+          width: 20%;
+      }
   }
