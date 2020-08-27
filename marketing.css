@@ -85,7 +85,7 @@ header nav {
   margin-right: -15px;
 }
 
-header nav li {
+header nav ul {
     display: flex;
     justify-content: space-evenly;
 
