@@ -56,8 +56,7 @@
   }
   
   header {
-    position: absolute;
-    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +82,7 @@
     margin-right: -15px;
   }
   
-  header nav li {
+  header nav ul{
       display: flex;
       justify-content: space-evenly;
   
@@ -140,7 +139,7 @@
 }
 
 
-.card-array {
+.cards {
     display: flex;
     height: 200px;
     align-items: center;
