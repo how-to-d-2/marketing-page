@@ -198,6 +198,9 @@
     margin-bottom: 40px;
   }
   
+  p {
+      font-si
+  }
   .first a.button {
     padding: 20px 46px;
   }
@@ -232,9 +235,10 @@
   
   footer {
     display: flex;
-    /* justify-content: space-around; */
+    margin: 50px 50px auto;
+   
     align-items: center;
-    /* background-color: grey; */
+    background-color: grey;
     color: black;
     padding: 10px 0;
     /* padding-top: 3rem; */
